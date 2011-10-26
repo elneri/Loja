@@ -1,0 +1,22 @@
+%h1 Meus Produtos
+
+%table.zebra-striped
+  %thead
+    %tr
+      %th Nome
+      %th Quantidade
+      %th Preço Unitário
+      %th Preço Total
+  %tbody
+    - pedido_atual.itens.each do |item|
+      %tr
+        %td= item.nome
+        %td= item.quantidade
+        %td= number_to_currency item.preco_unitario
+        %td= number_to_currency item.preco_total
+
+  %tfoot
+    %tr
+      %td{ :colspan => 2 }
+      %td Preço Total
+      %td= number_to_currency pedido_atual.preco_total
