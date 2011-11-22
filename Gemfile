@@ -1,12 +1,14 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'haml'
 gem 'sqlite3'
+gem 'will_paginate'
+gem 'sunspot_rails'
 
 
 # Gems used only for assets and not required
@@ -32,5 +34,10 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'shoulda'
+  gem 'factory_girl'
+  gem 'ZenTest'
 end
 
