@@ -17,7 +17,7 @@ group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
-  #gem 'therubyracer'
+  gem 'therubyracer'
 end
 
 gem 'jquery-rails'
@@ -33,6 +33,10 @@ gem 'jquery-rails'
 
 group :development do
   gem 'capistrano'
+end
+
+group :productio do
+  gem 'unicorn'
 end
 
 group :test do
