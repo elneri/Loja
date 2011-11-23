@@ -37,6 +37,7 @@ end
 
 group :productio do
   gem 'unicorn'
+  gem 'mysql2'
 end
 
 group :test do
